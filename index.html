@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/vnd.icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJC55BanJOpxMAKX0pxaRPJGcHDjJyPZLxZg&usqp=CAU"
+    />
+    <title>Café-Dev</title>
+  </head>
+  <body>
+    <!-- Barra de navegacion y boton de Menu desplegable -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <div class="centrado">
+          <img
+            src="https://cdn-icons-gif.flaticon.com/6172/6172528.gif"
+            id="icono"
+            alt="icono cafe"
+          />
+          <h1 class="navbar-brand">Café-<span>Dev</span></h1>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light d-lg-none">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#mobileNav"
+            aria-controls="mobileNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          > 
+            <span class="navbar-toggler-icon"></span>
+           
+          </button>
+        </nav>
+      </div>  
+
+<!-- menu desplegable para moviles  o tablets  -->
+
+          <div class="menu-desplegable" >
+            <ul>
+              <li>
+          <a href="#" class="decoration" id="about"> Acerca</a>
+              </li>
+              <li>
+              <a href="#" class="decoration"  id="products" > Productos</a>
+              </li>
+              <li>
+                 <a href="#" class="decoration"  id="services">Servicios</a>
+              </li>
+              <li>
+                <a href="#" class="decoration"  id="contact">Contacto</a>
+             </li>
+            </ul>
+              
+
+          </div>
+         
+         
+   
+
+ <!-- Menu principal para desktop -->
+      
+      <div class="col">
+        <div
+          class="collapse navbar-collapse"
+          class="pagination justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" id="acerca" aria-current="page" href="#">
+                Acerca
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="productos" aria-current="page" href="#">
+                Productos
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="servicios" aria-current="page" href="#">
+                Servicios
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="contacto" aria-current="page" href="#">
+                Contacto
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+   
+
+
+
+    
+    <!-- Pagina Principal -->
+    <div id="background">
+      <div class="contenido">
+        <div class="parallax01"></div>
+      </div>
+      <div class="contenido-negro">
+        <div class="zona centrado">
+          <h4>'Que es Café-Dev?'</h4>
+          <p id="texto" class="miDiv"></p>
+        </div>
+      </div>
+      <div class="contenido">
+        <div class="parallax02"></div>
+      </div>
+    </div>
+
+    <hr />
+    <!-- Acerca de   -->
+
+    <div class="container">
+      <div class="row" >
+        <div class="col-md-6"  >
+          <div class="pictures">
+          <img
+            src="https://www.wework.com/ideas/wp-content/uploads/sites/4/2019/12/20190917_WeWork_Carrera11b-99-25_Colombia_007_v1-1120x630.jpg"
+            alt="Imagen 1"
+            class="img-fluid"   id="image-1" 
+          />
+          <img
+            src="https://flatironschool.com/wp-content/uploads/2021/11/image1.jpg"
+            alt="Imagen 2"
+            class="img-fluid"  id="image-2" 
+          />
+        </div>
+        </div>
+
+        <div class="col-md-6"   >
+          <h2 id="acerca-de" >Acerca de Café-Dev</h2>
+          <section>
+            "Comenzamos como un espacio de co-working destinado a fomentar la
+            programación. Sin embargo, poco a poco, evolucionamos y nos
+            transformamos en una cafetería. Muchos de nuestros amigos, clientes
+            y personas cercanas comenzaron a acercarse para pasar su tiempo
+            libre y hablar sobre lo que nos apasiona: el desarrollo web, el
+            software y la tecnología en general.
+            <br />
+
+            "Contratamos personal de cocina para que nos ayudara en nuestras
+            creaciones culinarias, y así nuestros amigos pudieran pasar un
+            tiempo más agradable mientras trabajaban en sus proyectos. Con mucho
+            esfuerzo y dedicación, construimos nuestra comunidad, que ahora es
+            conocida como Café-Dev."
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pagina de inicio con imagenes -->
+
+    <main class="container">
+      <h2 class="margin-top">Parte de nuestras especialidades!</h2>
+      <p id="quitar-background">
+        Los siguientes platillos por los cuales nos caracterizamos en nuestra
+        cocina!
+      </p>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="centrar">
+            <img
+              src="https://images.hola.com/imagenes/cocina/recetas/20191017151958/ramen-pollo-huevo-cebollino-soja/0-734-730/ramen-adobe-m.jpg"
+              alt="imagen de ramen"
+              class="img-fluid"
+            />
+            <h2>Ramen de la Casa</h2>
+            <p class="desc">
+              Nuestras especialidades sin duda alguna es nuestro Ramen de la
+              Casa, el cual es perfecto para acompañar con el almuerzo o a la
+              cena!
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="centrar">
+            <img
+              src="https://hungryhealthyhappy.com/wp-content/uploads/2018/07/Mocha-Frappuccino-featured.jpg"
+              alt="imagen de Frapuccino"
+              class="img-fluid"
+            />
+            <h2>Frapuccino</h2>
+            <p class="desc">
+              No puedes irte sin antes deleitarte con el estilo del Café-Dev
+              Frapuccino!
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="centrar">
+            <img
+              src="https://usagif.com/wp-content/uploads/gifs/coffee-34.gif"
+              alt="imagen de Capuccino"
+              class="img-fluid"
+            />
+            <h2>Capuccino</h2>
+            <p class="desc">
+              Uno de los chineados de la casa es nuestro capuccino!
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="centrar">
+            <img
+              src="https://images.aws.nestle.recipes/original/0dcdbe631b092077fd7e411236c4b06d_sandwich_de_pollo_a_las_finas_hierbas_-_mx_ponte_bien.jpg"
+              alt="imagen de sandwich de pollo"
+              class="img-fluid"
+            />
+            <h2>Sandwich de Pollo</h2>
+            <p class="desc">
+              Deleitate con nuestro sandwich de pollo perfecto para compañar con
+              un buen café!
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Productos -->
+    <div class="container-md">
+      <h2 id="galeria">Nuestra Galeria!</h2>
+      <div class="slider">
+        <div class="slide">
+          <img
+            src="https://www.177milkstreet.com/assets/site/Recipes/_large/Tomato-Olive-Focaccia.jpg"
+            class="imagenes"
+            alt="focaccia"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://img.chilango.com/2018/11/Ton-Ton-Rament_JS_6-1.jpg"
+            class="imagenes"
+            alt="ramen"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://static.wixstatic.com/media/49e4ff_e99b3999723e4aeda26b9bc8435b5a09~mv2.jpg/v1/fill/w_2500,h_1666,al_c/49e4ff_e99b3999723e4aeda26b9bc8435b5a09~mv2.jpg"
+            class="imagenes"
+            alt="huevos benedict"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://www.sage.com/en-gb/blog/wp-content/uploads/sites/10/2021/03/coffee-shop-1209863_1920-1-1024x660.jpg"
+            class="imagenes"
+            alt="Imagen 3"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://img.freepik.com/fotos-premium/croissant-casero-plato-servido-cafe-negro-o-americano-desayuno_54413-238.jpg"
+            class="imagenes"
+            alt="cafe y croissant"
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://img.freepik.com/fotos-premium/mujeres-encantadoras-disfrutan-desayuno-cafe-vista-arriba-desayuno-comida-cafe-croissant-tartas-queso-salsa-mesa_271966-1003.jpg?w=2000"
+            class="imagenes"
+            alt="Imagen 3"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Antigua funcionalidad de botones -->
+    <!-- <div id="botones">
+      <button id="prevBtn" class="btn btn-outline-success">Anterior</button>
+      <button id="nextBtn" class="btn btn-outline-success">Siguiente</button>
+    </div> -->
+
+    <!-- Servicios  -->
+
+    <div class="container" id="centrado-servicios">
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img
+              src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_956,h_637/v1597153170/assets/34/dc8a13-709b-425b-a40e-f5278c649e58/original/SCENARIO-4_RESTAURANT_FOOD-PICK-UP_0437-large-1-3_2.jpg"
+              class="card-img-top"
+              class="img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Delivery</h5>
+              <p class="card-text">
+                Estamos en todas las apps de delivery tales como Uber-Eats, Didi
+                y Pedidos Ya!
+              </p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img
+              src="https://greenweddingshoes.com/wp-content/uploads/2021/03/wedding-catering-styles-1.jpg"
+              class="card-img-top"
+              class="img-fluid"
+              alt="catering"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Catering Service</h5>
+              <p class="card-text">
+                También ofrecemos servicios de catering a su disposición para
+                sus eventos especiales!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img
+              src="https://www.carbonaraapp.com/wp-content/uploads/2022/03/rod-long-I79Pgmhmy5M-unsplash-scaled.jpg"
+              class="card-img-top"
+              class="img-fluid"
+              alt="reservas"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Reservaciones</h5>
+              <p class="card-text">
+                En nuestra sección de contacto puedes reservar un lugar en
+                nuestro Café-Dev!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- Contacto -->
+
+    <div class="formulario">
+      <h3>Contactanos</h3>
+      <div class="container mt-5">
+        <form>
+          <div class="form-group">
+            <label for="nombre">Nombre y Apellido</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nombre"
+              placeholder="Ingrese su nombre y apellido "
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Ingrese su email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono:</label>
+            <input
+              type="tel"
+              class="form-control"
+              id="telefono"
+              placeholder="Ingrese su teléfono"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message"> Mensaje:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="direccion"
+              placeholder="Ingrese su mensaje"
+            />
+          </div>
+          <button type="button" class="btn btn-primary" id="enviar">
+            Enviar
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-light" id="footer">
+      <div class="container py-3">
+        <div class="row">
+          <div>
+            <h5>Información de contacto</h5>
+            <p>Correo electrónico: info@cafe-dev.com</p>
+            <p>Teléfono: +506 2220-2456</p>
+          </div>
+
+          <div class="col" >
+            <ul class="list-unstyled">
+             
+                <img class="icons" src="https://cdn-icons-png.flaticon.com/512/2168/2168281.png" alt="Facebook"></a>
+              
+                <img class="icons" src="https://cdn3.iconfinder.com/data/icons/social-media-black-white-1/1024/instagram-512.png" alt="Instagram"></a>
+                <img class="icons"   src="https://images.getpng.net/uploads/preview/pack-banners-with-social-media-icons-black-white56-1151638294566vydkjmn2yu.webp" alt="">
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- boton de desplazarse hacia arriba -->
+    <i class="desplazarse-hacia-arriba" id="desplazarse-hacia-arriba"
+      ><img
+        src="https://icones.pro/wp-content/uploads/2021/02/icone-de-fleche-vers-le-haut-vert.png"
+        class="socicon up-arrow"
+        alt="desplazarse-hacia-arriba"
+    /></i>
+
+    <script
+      src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"
+      integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="contacto.js"></script>
+    <script src="button.js"></script>
+    <script src="slider.js"></script>
+    <script src="nav.js"></script>
+    <script src="gallery.js"></script>
+    <script src="fade.js"></script>
+   
+  
+  </body>
+</html>

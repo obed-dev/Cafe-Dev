@@ -1,0 +1,597 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html , body { 
+
+  scroll-behavior: smooth;
+}
+
+:root {
+  --color-primario: #1d1d1d;
+  --color-secundario: rgba(224, 215, 212, 0.993);
+  --color-verde: #006241;
+}
+
+h1 {
+  float: right;
+  margin: 4px;
+  font-family: "SodoSans-Black";
+}
+
+.navbar-brand {
+  font-family: "SodoSans-Black";
+  font-size: 3.1rem;
+  color: var(--color-verde);
+}
+h2 {
+  font-size: 2.1rem;
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+  padding: 0rem;
+  text-align: center;
+  color: var(--color-verde);
+  font-family: "SodoSans-Black";
+}
+
+h4 {
+  color: aliceblue;
+  text-align: center;
+  font-size: 2rem;
+  padding: 0.5rem;
+  font-family: "SodoSans-Black";
+}
+
+
+ul {
+  list-style-type: none;
+  color: rgb(233, 227, 227);
+}
+
+a , #about , #products , #services , #contact {
+  text-decoration: none;
+}
+
+a:hover,
+#inicio:hover,
+h2:hover,
+h3:hover {
+  color: #1d1d1d;
+}
+#inicio {
+  color: var(--color-verde);
+}
+span {
+  color: var(--color-primario);
+  font-family: "Lander";
+}
+
+.nav-link {
+  color: #006241;
+  font-size: 2.2rem;
+  font-family: "SodoSans-Black";
+}
+
+/* boton para desplazarse-hacia-arriba */
+.desplazarse-hacia-arriba {
+  position: fixed;
+  right: 0.5%;
+  bottom: 3%;
+  cursor: pointer;
+  padding: 2rem;
+}
+
+.socicon {
+  width: 2rem;
+  height: 2rem;
+  background-color: white;
+  box-shadow: 1px 1px 1px;
+  border-radius: 10px 10px 10px;
+}
+
+/* parallax pagina de inicio */
+.parallax01 {
+  height: 600px;
+  background-image: url("https://media.admagazine.com/photos/618a678a90c4ec9a52ca1157/3:2/w_3000,h_2000,c_limit/68358.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  filter: brightness(80%);
+}
+
+.parallax02 {
+  height: 600px;
+  background-image: url("https://selfmadewebdesigner.com/wp-content/uploads/2020/07/how-to-advance-your-career-as-a-frontend-web-developer.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  filter: brightness(80%);
+}
+
+hr {
+  width: 100%;
+  height: 2rem;
+  color: var(--color-primario);
+
+  padding: 4.5rem;
+  margin-top: 13rem;
+}
+
+p {
+  font-size: 20px;
+  font-family: "SodoSans-Light";
+  text-align: center;
+
+  background-color: var(--color-primario);
+  color: aliceblue;
+}
+
+#texto {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 26px;
+  font-family: "SodoSans-Light";
+}
+
+#background {
+  background-color: var(--color-primario);
+}
+.desc {
+  background-color: var(--color-primario);
+  border-radius: 10px 10px 10px;
+  text-align: justify;
+  padding: 0.5rem;
+  font-family: "SodoSans-Light";
+  font-size: 20px;
+}
+
+img {
+  height: 30rem;
+  width: 30rem;
+  border-radius: 8px 8px 8px;
+  text-align: center;
+  filter: brightness(90%);
+}
+
+.formulario {
+ 
+  width: 100%;
+  padding: 3rem;
+
+  margin-bottom: 10rem;
+  font-family: "SodoSans-Light";
+  font-size: 20px;
+}
+
+.form-group {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+
+
+
+
+.nav-item { 
+
+    padding: 6px 9px;
+    border-radius: 0.5rem;
+
+}
+.nav-item:hover { 
+
+  background-color: rgb(226, 236, 226);
+  transition: 0.5s;
+
+}
+
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 55rem;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+
+@media only screen and (max-width : 768px  ) {
+
+  .slide img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .imagenes {
+    width: 30rem;
+    height: 20rem;
+  }
+  
+
+}
+
+
+.imagenes {
+  width: 50rem;
+  height: 40rem;
+}
+
+#icono {
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: none;
+  margin-top: none;
+justify-content: center;
+text-align: center;
+  border-radius: 50%;
+  
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
+
+}
+
+
+
+button {
+  margin-top: 0px;
+  padding: 10px 20px;
+
+  font-size: 19px;
+}
+
+#botones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 2rem;
+  gap: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .slider {
+    width: 100%;
+    height: 100%;
+    filter: brightness(90%);
+    border-radius: 5px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .slider {
+    width: 100%;
+    height: 100%;
+    filter: brightness(90%);
+    border-radius: 5px;
+  }
+   
+  section { 
+      font-size: 19px;
+           
+
+   }
+  h2 { 
+    font-size: 1.8rem;
+  }
+
+
+}
+
+.col-md-6 {
+  background-color: rgb(226, 236, 226);
+  border-radius: 5px;
+  padding: 3rem;
+}
+
+section {
+  font-size: 17px;
+  font-family: "SodoSans-Light";
+  text-align: center;
+
+  color: var(--color-primario);
+}
+
+.centrar {
+  text-align: center;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  
+}
+
+
+
+
+
+@media only screen and  (min-width: 768px  )and (max-width: 990px){
+#image-1 , #image-2 { 
+  max-width: 110%;
+  height: 20rem;
+
+  
+         
+          
+  }
+
+  .pictures { 
+     margin-top: 3rem;
+
+  }
+ 
+  section { 
+
+      font-size: 18px;
+      font-family: "SodoSans-Black";
+      text-align: center;
+  }
+#acerca-de { 
+     font-size: 1.8rem;
+     font-family: "SodoSans-Black";
+
+
+}
+  
+}
+
+
+@media only screen and  (min-width: 990px  )and (max-width: 1200px) { 
+
+  .pictures { 
+    margin-top: 3.5rem;
+
+ }
+ section { 
+
+  font-size: 18px;
+  font-family: "SodoSans-Black";
+  text-align: center;
+}
+#acerca-de { 
+ font-size: 1.8rem;
+ font-family: "SodoSans-Black";
+
+
+}
+
+}
+
+
+@media only screen and (max-width: 768px  ){
+  section { 
+
+    font-size: 18px;
+    font-family: "SodoSans-Black";
+    text-align: center;
+}
+#acerca-de { 
+   font-size: 1.8rem;
+   font-family: "SodoSans-Black";
+
+
+}
+
+
+#quitar-background {
+  background-color: #ffffff;
+  color: #1d1d1d;
+  font-size: 16px;
+  font-family: "SodoSans-Black";
+ 
+}
+}
+
+
+
+
+
+
+
+#quitar-background {
+  background-color: #ffffff;
+  color: #1d1d1d;
+  font-size: 22px;
+  font-family: "SodoSans-Black";
+ 
+}
+
+.image-fluid {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 8px 8px 8px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--color-verde);
+  font-family: "SodoSans-Black";
+  font-weight: thin;
+
+}
+
+#galeria,
+.margin-top {
+  margin-top: 15rem;
+}
+
+#centrado-servicios { 
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  width: 100%;
+  padding: 2rem;
+  background-color: var(--color-secundario);
+  margin-top: 10rem;
+  
+
+
+}
+
+
+
+@media only screen and (max-width: 990px ) and ( min-width: 768px ) {
+  
+  #centrado-servicios { 
+
+    max-width: 100%;
+  }
+
+
+}
+
+
+.card { 
+  display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 1rem;
+   background-color: rgb(226, 236, 226);
+   
+  
+  
+
+}
+
+.card-img-top { 
+
+  
+  height: 15rem;
+  filter: brightness(80%);
+}
+
+.card-text  { 
+ 
+text-align: center;
+  color: var(--color-secundario);
+  background-color: none;
+  border-radius: 10px;
+  font-family: "SodoSans-Black";
+  font-size: 18px;
+ 
+}
+
+.card-title { 
+
+  text-align: center;
+  color: var(--color-verde);
+  font-family: "SodoSans-Black";
+  font-size: 1.3rem;
+}
+
+
+@media screen and (max-width:649px) {
+.col { 
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+}
+
+
+
+
+@media only screen and (max-width: 990px) { 
+
+  .menu-desplegable { 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(233, 227, 227);
+    width: 100%;
+   text-align: center;  
+   
+ 
+    
+ 
+ }
+ 
+ li { 
+ 
+   color: #1d1d1d;
+    text-align: center;
+    width: 100%;
+    font-size: 2.2rem;
+    font-family: "SodoSans-Black";
+    padding: 10px;
+ 
+    
+   
+ }
+
+ .decoration { 
+
+  text-decoration: none;
+  
+  color: var(--color-verde);
+ }
+
+li:hover { 
+
+
+  background-color: rgb(226, 236, 226);
+  color: #1d1d1d;
+  transition: 0.2s;
+  border-radius: 10px;
+ 
+}
+
+
+}
+
+@media only screen and (min-width: 990px ) {
+  
+  .menu-desplegable { 
+    display: none ;
+  }
+
+}
+
+
+#enviar { 
+
+  background-color:var(--color-verde);
+ color: aliceblue;
+  border-color: none;
+}
+
+#enviar:hover { 
+
+  background-color: rgb(226, 236, 226);
+  color: #006241;
+
+}
+
+.icons {
+
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 3px solid #d8e2dc;
+  transition: all 0.5s ease;
+  background-color: #d8e2dc;
+}
+
+
+.icons:hover { 
+
+    height: 50px;
+    width: 50px;
+}
